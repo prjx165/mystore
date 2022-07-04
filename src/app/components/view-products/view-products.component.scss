@@ -1,0 +1,71 @@
+.container{
+    width: 80%;
+    padding: 4%;
+    padding-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    
+    .component-1{
+        width: 60%;
+        padding: 5%;
+
+        .title{
+            font-size: 50px;
+        }
+
+        .desc{
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .button{
+            margin-top:20px;
+
+            .button-1{
+                font-size: 20px;
+                margin-top:20px;
+                padding: 10px;
+                width: 100%;
+                border-radius: 20px;
+                //background-color: rgb(50, 219, 50);
+                cursor: pointer;
+            }
+
+            .button-2{
+                font-size: 20px;
+                padding: 10px;
+                margin-top:20px;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 20px;
+                //background-color: rgb(236, 240, 14);
+            }
+
+            .button-3{
+                font-size: 20px;
+                cursor: pointer;
+                padding: 10px;
+                margin-top:20px;
+                width: 100%;
+                border-radius: 20px;
+                //background-color: rgb(238, 26, 11);
+            }
+            
+            button:hover{
+                background-color: rgb(229,229,229);
+                color: black;
+            }
+        }
+    }
+
+    .component-2{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+
+    }
+}

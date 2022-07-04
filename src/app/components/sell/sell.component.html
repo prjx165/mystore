@@ -1,0 +1,63 @@
+<app-loader *ngIf="showSpinner"></app-loader>
+<div *ngIf="!showSpinner" class="sell">
+    <div class="dummy"></div>
+    <div class="container">
+        <div>
+            <h1 class="title">Sell Anything , Anytime , Anywhere</h1>
+        </div>
+        <form mat-form>
+            <mat-form-field>
+                <mat-label>
+                    Product Name
+                </mat-label>
+                <input type="text" 
+                    matInput
+                    #name
+                    (keyup)="nameHandler(name.value)"
+                >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>
+                    Description
+                </mat-label>
+                <input type="text" 
+                    matInput
+                    #desc
+                    (keyup)="descHandler(desc.value)"
+                >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>
+                    Expected Price
+                </mat-label>
+                <input type="text"
+                    matInput
+                    #price
+                    (keyup)="priceHandler(price.value)"    
+                >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>
+                    Contact
+                </mat-label>
+                <input type="text" 
+                    matInput
+                    #contact
+                    (keyup)="contactHandler(contact.value)"
+                >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>
+                    Image URL
+                </mat-label>
+                <input type="text" 
+                    matInput
+                    #url
+                    (keyup)="urlHandler(url.value)"
+                >
+            </mat-form-field>
+            <br>
+            <button (click)="submitHandler($event)">Submit</button>
+        </form>
+    </div>
+</div>

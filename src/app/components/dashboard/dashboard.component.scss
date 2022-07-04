@@ -1,0 +1,78 @@
+.container-1{
+    width: 90%;
+    min-height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+   
+}
+
+.grid-list{
+    mat-grid-tile{
+        background-color: rgb(229,229,229);
+        gap: 30px;
+        .card{
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-bottom: 2%;
+            text-align: center;
+            img{
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 200px;
+                height: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .price{
+                margin-top: 20px;
+                color: green;
+            }
+
+            button{
+                margin-top: 20px;
+                background-color: rgb(229,229,229);
+                width: 100%;
+            }
+        }
+    }
+}
+
+.headnav{
+    height: 80px;
+    width: auto;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .logo{
+    margin-left: 2%;
+    margin-right: auto ;
+  
+    h1{
+      padding: 2%;
+      width:max-content;
+      font-size: 180%;
+      font-family: sans-serif;
+    }
+  }
+  
+  .links{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding-right: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+  
+    button{
+      width: 130px;
+      margin: 0% 0% 0% 2%;
+      padding: 1%;
+      font-size: 100%;
+    }
+  
+  }

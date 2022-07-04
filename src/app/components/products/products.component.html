@@ -1,0 +1,14 @@
+<app-loader *ngIf="showSpinner"></app-loader>
+<div *ngIf="!showSpinner" class="container-1">
+    <mat-grid-list class="grid-list" cols="3">
+        <mat-grid-tile *ngFor="let p of products">
+            <mat-card class="card" >
+                <mat-card-title>{{p.name}}</mat-card-title>
+                <img src={{p.url}}  mat-card-image alt="Image Is Getting Loaded">
+                <mat-card-actions class="price">Price {{p.price}} </mat-card-actions>
+                <button class="view" mat-button (click)="clickHandler(p)">View</button>
+                <button class="delete" *ngIf="this.user_id==p.uploadedBy" mat-button (click)="deleteHandler(p.id)">Delete</button>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

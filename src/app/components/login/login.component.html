@@ -1,0 +1,36 @@
+<app-topnav></app-topnav>
+<div *ngIf="showSpinner">
+    <app-loader></app-loader>
+</div>
+<div *ngIf="!showSpinner" class="login">
+    <div class="container">
+        <form class="login-form">
+            <div class="heading">Login</div>
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput 
+                    type="text"
+                    #username
+                    (keyup)="clickHandlerForUsername(username.value)"
+                >
+            </mat-form-field>
+            <br/>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput  
+                    [type]="hide ? 'password' : 'text'"
+                    #password
+                    (keyup)="clickHandlerForPassword(password.value)"    
+                >
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field><br>
+            <div class="btn">
+                <button class="login-button" (click)="submitHandler($event)">Login</button>
+            </div>
+            <div class="desc">
+                <h3>New User ? <a routerLink="/signup">Register here</a></h3>
+            </div>
+        </form>
+    </div>
+</div>
+

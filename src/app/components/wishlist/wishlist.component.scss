@@ -1,0 +1,88 @@
+.wishlist{
+    margin-top: 5%;
+}
+.container{
+    width: 85%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto ;
+    
+
+    .title{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .card-1{
+        text-align: center;
+        font-size: 50px;
+        margin: 5%;
+        background-color: rgb(229,229,229);
+        padding: 3%;
+        border-radius: 30px;
+    }
+
+    .card{
+        background-color: rgb(229,229,229);
+        width: 95%;
+        padding: 20px;
+        border-radius: 20px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto ;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+
+       .details{
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: row;
+        
+        .left{
+            width: 80%;
+            h3{
+                font-size: 20px;
+                
+            }
+            h1{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        .right{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            button{
+                width: 100%;
+                font-size: 20px;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                height: 30%;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #fff;
+                color: black;
+            }
+        }
+
+       }
+    }
+}
+
+.noitem{
+    background-color:rgb(229,229,229);
+    margin-top: 5%;
+    padding: 3%;
+    text-align: center;
+    font-size: 24px;
+    font-family:Calibri;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<app-loader *ngIf="showSpinner"></app-loader>
+<div *ngIf="!showSpinner" wishlist>
+    <div class="container">
+        <div>
+            <h1 class="title">Wishlist</h1>
+        </div>
+        <div *ngIf="list.length==0">
+            <div>
+                <h1 class="noitem">No Items In WishList</h1>
+            </div>
+        </div>
+        <div class="card" *ngFor="let p of list">
+            <img src={{p.url}} alt="Image not availabel">
+            <div class="details">
+                <div class="left">
+                    <h1> {{p.name}} </h1>
+                    <h3> {{p.description}} </h3>
+                    <h3> {{p.price}} </h3>
+                    <h3> {{p.contact}} </h3>
+                </div>
+                <div class="right">
+                    <button (click)="delete(p.id)">Delete</button>
+                    <button>Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

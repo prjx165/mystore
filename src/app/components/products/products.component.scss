@@ -1,0 +1,49 @@
+.container-1{
+    width: 90%;
+    min-height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+   
+}
+
+.grid-list{
+    mat-grid-tile{
+        background-color: rgb(229,229,229);
+        gap: 30px;
+        .card{
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-bottom: 2%;
+            text-align: center;
+            img{
+                margin-top: auto;
+                margin-bottom: auto;
+                width: auto;
+                height: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .price{
+                margin-top: 20px;
+                color: green;
+            }
+
+            .view{
+                margin-top: 20px;
+                background-color: rgb(229,229,229);
+                width: 100%;
+            }
+        }
+    }
+}
+
+.delete{
+    margin-top: 20px;
+    background-color: rgb(240, 8, 8);
+    width: 100%;
+    color:#fff;
+}

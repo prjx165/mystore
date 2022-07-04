@@ -1,0 +1,61 @@
+<app-topnav></app-topnav>
+<div class="signup">
+    <div class="container">
+        <form class="signup-form">
+            <div class="heading">Signup</div>
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input 
+                    matInput 
+                    type="text"
+                    #name
+                    (keyup)="nameHandler(name.value)"
+                >
+            </mat-form-field>
+            <br/>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input 
+                    matInput 
+                    type="text"
+                    #ps
+                    (keyup)="passwordHandler(ps.value)"
+                >
+            </mat-form-field><br>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input 
+                    matInput 
+                    type="text"
+                    #email
+                    (keyup)="emailHandler(email.value)"
+                >
+            </mat-form-field><br>
+            <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input 
+                    matInput 
+                    type="text"
+                    #add
+                    (keyup)="addressHandler(add.value)"
+                >
+            </mat-form-field><br>
+            <mat-form-field>
+                <mat-label>Mobile No.</mat-label>
+                <input 
+                    matInput 
+                    type="text"
+                    #mb
+                    (keyup)="mobileHandler(mb.value)"
+                >
+            </mat-form-field><br>
+            <div class="btn">
+                <button (click)="submitHandler()" class="signup-button">Register</button>
+            </div>
+            <div class="desc">
+                <h3>Already have an account ? <a routerLink="/login">Login here</a></h3>
+            </div>
+        </form>
+    </div>
+</div>
+
